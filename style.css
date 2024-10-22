@@ -1,0 +1,196 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4,25vw);
+
+    grid-auto-rows: repeat(4,1fr);
+    grid-template-areas:  "iphone iphone learn-more learn-more"
+        "keyboard imac imac icloud"
+        "games best-choice best-choice icloud"
+        "twitter popular vision vision";
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+}
+
+.vision{
+    grid-area: vision;
+    background-color: blueviolet;
+}
+
+.icloud {
+    grid-area: icloud;
+    background-color: olive;
+}
+
+.icloud img{
+    width: 70%;
+}
+
+.img-container i{
+    color:#F3BF1B;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.popular-text{
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.twitter{
+    grid-area: twitter;
+    background-color:darkblue;
+}
+
+.best-choice{
+    grid-area: best-choice;
+    background-color: orange;
+}
+
+.iphone {    
+    grid-area: iphone;
+    display: flex;  
+    align-items: center;
+    justify-self: center;
+}
+
+.iphone img{
+    width:40%;
+    padding-right: 50px;
+}
+
+.container-main-text{
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.iphone-content .container-main-text,
+.iphone-content .container-footer-text{
+    width: 70%;
+}
+
+.container-footer-text{
+    font-family: "Open Sans"    , sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(159, 163, 167);    
+}
+
+.iphone-content{
+    padding-left: 50px;
+}
+
+.learn-more {
+    grid-area: learn-more;
+    background-color: #F7F8F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.learn-more p{
+    font-family :"Arvo", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+
+}
+
+.keyboard {
+    grid-area: keyboard;
+    background-color:  #F05638;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.keyboard img{
+    width: 100%;
+}
+
+.keyboard h2{
+    font-family:"Arvo", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color:#fff;
+
+    width: 70%;
+}
+
+.keyboard p{
+    font-family:"Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color:    rgb(255, 200, 10);
+    margin-top: 20px;
+}
+
+.keyboard p::after{
+    content: ">";
+    margin-left: 10px;
+}
+
+
+
+.download-now p::after{
+    content: ">";
+    margin-left: 10px;
+}
+
+.imac {
+    grid-area: imac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.imac img{
+    width: 100%;
+    padding-left: 0;
+    transform: translateX(-30%);
+    height: auto;   
+    padding-bottom: 0;
+}
+
+.imac-main{
+    width: 35%;
+}
+
+.imac-side{
+    width: 40%;
+}
+
+.download-now{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(39, 185, 194);
+}
+
+.download-now::after{
+    content: ">";
+    margin-left: 10px;
+}
+
+.popular{
+    grid-area: popular;
+    background-color: yellow;
+}
+
+.games{
+    grid-area: games;
+    background-color: red;
+}
