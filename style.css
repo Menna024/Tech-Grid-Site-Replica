@@ -18,16 +18,36 @@ h2{
 
 .vision{
     grid-area: vision;
-    background-color: blueviolet;
+    background-color: black;
+    display: flex;
+
+
 }
 
 .icloud {
     grid-area: icloud;
-    background-color: olive;
+    background-color: #8F76BC;
 }
 
 .icloud img{
-    width: 70%;
+    width: 50%;
+}
+
+.img-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top:50px;
+    background-color:#8166B0;
+    border-radius: 50%;
+}
+
+.meet-text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
 }
 
 .img-container i{
@@ -37,20 +57,178 @@ h2{
     font-weight: 700;
 }
 
+.icloud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icloud-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+}
+
+.icloud-text{
+    font-family: "Arvo", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color:white;
+}
+
+.icloud-main p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#fff;
+}
+
+.icloud-main button{
+    background-color:#FFC80A ;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight:700;
+    border: none;
+    padding: 20px;
+    margin-top:10px;
+    border-radius: 35px;
+}
+
 .popular-text{
     font-family: "Open Sans", serif;
     font-weight: 700;
     font-size: 10px;
+    padding: 0px;
+    
+}
+
+.best-choice img{
+    width: 80%;
+    z-index: 5;
+    text-align: center;
+}
+
+
+.main-bestchoice-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top:60px ;
+}
+
+.main-bestchoice-content img,
+.main-bestchoice-content p
+{
+    padding-top:65px;
+    transform: translateX(-50px );
+    padding-bottom:0px;
+}
+
+.main-bestchoice-content h2{
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+}
+
+.main-bestchoice-content p{
+    font-size: 270px;
+    padding-top:90px;
+    position: absolute;
+    transform: translateX(1%);
+    font-family: "Arvo", serif;
+    color: rgba(0,0,0,0.1);
+}
+
+.best-choice-tag{
+    border-radius: 30px;
+    background-color: #fa684f;
+    width: 10%;
+    margin:30px 0 0 20px;    
+}
+
+.best-choice-tag p{
+    color:#fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    padding: 6px;
+}
+
+.popular-area{
+    border-radius:60px;
+    background-color:#8b72b6;
 }
 
 .twitter{
     grid-area: twitter;
-    background-color:darkblue;
+    background-color: #38d5f4;        
+    
+    padding-top: 0px;
+}
+
+.twitter-circle p{
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.twitter-circle{
+    background-color: #35cfed;
+    border-radius: 50%;
+    width: 50px;
+    padding:40px 100px 0 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+   }
+
+.popular-tag{
+        border-radius:20px;
+        background-color:#7bc424;
+        width: 20%;
+    margin:30px 0 0 20px;        
+}
+
+.popular-tag p{
+    color:#fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+#better-experience{
+    font-family:"Arvo", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .best-choice{
     grid-area: best-choice;
-    background-color: orange;
+    background-color: #93B6B7;
 }
 
 .iphone {    
@@ -141,8 +319,6 @@ h2{
     margin-left: 10px;
 }
 
-
-
 .download-now p::after{
     content: ">";
     margin-left: 10px;
@@ -154,13 +330,14 @@ h2{
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 
 .imac img{
-    width: 100%;
+    width: 200%;
     padding-left: 0;
-    transform: translateX(-30%);
+    transform: translate(-60%,18px);
     height: auto;   
     padding-bottom: 0;
 }
@@ -187,10 +364,51 @@ h2{
 
 .popular{
     grid-area: popular;
-    background-color: yellow;
 }
 
 .games{
     grid-area: games;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:40px;
+}
+
+.games img{
+    width: 50%;
+}
+
+.games p::after{
+        content: ">";
+        margin-left: 10px;
+}
+
+.games h2{
+    font-family: "Arvo", sans-serif;
+    font-weight: 400;
+    font-size:22px;
+    color:#000; 
+    width: 30%;
+}
+
+.games p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(39, 185, 194)
+}
+
+.vision img{
+    width: 40%;
+}
+
+.vision p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    margin: auto;
+    width: 30%;
 }
